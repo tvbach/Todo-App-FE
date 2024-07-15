@@ -1,25 +1,25 @@
 // src/components/CreateTaskModal.js
-import * as React from 'react';
-import { Modal, Box, Typography, TextField, Button, Select, MenuItem, FormControl, InputLabel } from '@mui/material';
+import React, { useState } from "react";
+import { Modal, Box, Typography, TextField, Button, Select, MenuItem, FormControl, InputLabel } from "@mui/material";
 
 const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
   width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
+  bgcolor: "background.paper",
+  border: "2px solid #000",
   boxShadow: 24,
   p: 4,
 };
 
 const CreateTaskModal = ({ open, handleClose, handleCreate }) => {
-  const [task, setTask] = React.useState({
-    title: '',
-    sub_title: '',
-    priority: 'low',
-    due_date: '',
+  const [task, setTask] = useState({
+    title: "",
+    sub_title: "",
+    priority: "low",
+    due_date: "",
   });
 
   const handleChange = (e) => {

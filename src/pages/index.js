@@ -18,7 +18,7 @@ export default function Home({ tasks: initialTasks, BASE_URL }) {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ "task": newTask}),
+        body: JSON.stringify({ "task": newTask }),
       });
 
       if (!response.ok) {
