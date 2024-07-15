@@ -1,11 +1,11 @@
-import { FaClock } from 'react-icons/fa';
-import { Box, Typography, Checkbox, FormControlLabel } from '@mui/material';
+import { FaClock } from "react-icons/fa";
+import { Checkbox, FormControlLabel } from "@mui/material";
 
 const Task = ({ id, title, sub_title, priority, due_date, handleCheckboxChange }) => {
   const priorityClasses = {
-    high: 'bg-red-100 text-red-700',
-    medium: 'bg-yellow-100 text-yellow-700',
-    low: 'bg-green-100 text-green-700',
+    high: "bg-red-100 text-red-700",
+    medium: "bg-yellow-100 text-yellow-700",
+    low: "bg-green-100 text-green-700",
   };
 
   const handleFinishTask = (id) => {
